@@ -1,0 +1,24 @@
+package com.Alexander.editorpackage;
+
+import java.awt.Dimension;
+import java.awt.Toolkit;
+import javax.swing.JFrame;
+/**
+*
+* @author Alexander Kornetzke
+*/
+public class Main {
+	
+	static Frame frame;
+	
+	public static void main(String[] args) {
+		frame = new Frame();        
+        frame.setTitle("Atom Text Editor");
+        Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
+        frame.setSize(screenSize);
+        frame.setLocationRelativeTo(null);
+        frame.setVisible(true);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+	}
+
+}
